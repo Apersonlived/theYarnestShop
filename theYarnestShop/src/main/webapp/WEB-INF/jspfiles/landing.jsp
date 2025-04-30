@@ -21,11 +21,11 @@
 			cute goodies crocheted with love!</p>
 	</div>
 
-	<button type="submit" class="entry-button">Shop With Us</button>
+	<a href="${pageContext.request.contextPath}/Login"><button type="submit" class="entry-button">Shop With Us</button></a>
 
 	<div class=media>
 	<div class=media-img>
-	<a href=url("${pageContext.request.contextPath}/resources/image/registerpage.jpg")></a>
+	<img src="${pageContext.request.contextPath}/resources/image/pinterestLogo1.png" alt = "Pinterest">
 	</div>
 	</div>
 </body>

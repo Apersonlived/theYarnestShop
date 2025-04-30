@@ -1,40 +1,41 @@
 @charset "UTF-8";
-
 @charset "ISO-8859-1";
 
 body {
 	font-family: sans-serif;
-	background-color:rgba(195, 194, 192, 1);
+	background-color: #695137;
 	background-repeat: no-repeat;
-	height: 1414px;
+	height:100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.registration-box {
-	width: 692px;
-	height: 1252px;
+.login-box {
+	width: 600px;
+	height: 550px;
 	background: rgba(217, 217, 217, 0.5);
-	margin: 30px auto;
+	margin-left:40px;
 	padding: 20px;
+	margin-top: 50px;
 }
+
+
 
 h2 {
 	text-align: center;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	font-family: Lavishly Yours;
 	font-size: 30px;
-	margin-top: 50px;
 }
+
 h5{
-	margin-top: 50px;
 	margin-bottom: 10px;
 	font-size: 11px;
 	text-decoration: underline;
-	color: black;
+	padding-left: 60px;	
 }
-
 
 label {
 	display: block;
@@ -49,7 +50,7 @@ input {
 	height: 35px;
 	padding: 10px;
 	margin-left: 60px;
-	background-color: rgba(242, 239, 239, 1);
+	color: black;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-sizing: content-box;
@@ -66,12 +67,8 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	margin: 30px auto;
-	margin-top: 10px;
-	width: 10%;
-	position: relative;
-	left: 48%;
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+	margin-left: 245px;
+	width: 30%;
 }
 
 button:hover {

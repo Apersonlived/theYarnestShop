@@ -88,8 +88,10 @@ button:hover {
 
 .media{
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	gap: 30px;
+	margin-top: 215px;
+	margin-right: 20px;
 }
 
 .media-img{

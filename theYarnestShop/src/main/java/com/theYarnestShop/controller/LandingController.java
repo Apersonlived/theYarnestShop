@@ -28,6 +28,4 @@ public class LandingController extends HttpServlet{
 		request.getRequestDispatcher("WEB-INF/jspfiles/landing.jsp").forward(request, response);
 	}
 
-	
-	
 }
