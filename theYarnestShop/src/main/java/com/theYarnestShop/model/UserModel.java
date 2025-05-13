@@ -1,34 +1,69 @@
 package com.theYarnestShop.model;
 
 public class UserModel {
-	private int user_id;
+	private Integer user_id;
+	private String full_name;
 	private String user_name;
 	private String email;
 	private String phone;
 	private String address;
+	private String password;
 	private String role;
 	
-	
-	public UserModel(int user_id, String user_name, String email, String phone, String address, String role) {
+	public UserModel() {
 		super();
-		this.user_id = user_id;
+		// TODO Auto-generated constructor stub
+	}
+
+	public UserModel(String user_name, String password) {
+		super();
+		this.user_name = user_name;
+		this.password = password;
+	}
+
+	public UserModel(String full_name, String user_name, String email, String phone, String address, String password,
+			String role) {
+		super();
+		this.full_name = full_name;
 		this.user_name = user_name;
 		this.email = email;
 		this.phone = phone;
 		this.address = address;
+		this.password = password;
 		this.role = role;
 	}
 
-	public int getUser_id() {
+	public UserModel(Integer user_id, String full_name, String user_name, String email, 
+			String phone, String address, String password, String role) {
+		super();
+		this.user_id = user_id;
+		this.full_name = full_name;
+		this.user_name = user_name;
+		this.email = email;
+		this.phone = phone;
+		this.address = address;
+		this.password = password;
+		this.role = role;
+	}
+
+	public Integer getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(int user_id) {
+	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
 
 	public String getUser_name() {
 		return user_name;
+	}
+
+	public String getFull_name() {
+		return full_name;
+	}
+
+	public void setFull_name(String full_name) {
+		this.full_name = full_name;
 	}
 
 	public void setUser_name(String user_name) {
@@ -59,6 +94,15 @@ public class UserModel {
 		this.address = address;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	
 	public String getRole() {
 		return role;
 	}

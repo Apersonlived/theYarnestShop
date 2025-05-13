@@ -9,6 +9,11 @@ public class ProductModel {
 	private String image;
 	private int stock;
 	
+	public ProductModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public ProductModel(String product_id, String product_name, String category, String description, float price,
 			String image, int stock) {
 		super();

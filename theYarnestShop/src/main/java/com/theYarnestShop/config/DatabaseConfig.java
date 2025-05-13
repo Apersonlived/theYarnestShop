@@ -11,26 +11,12 @@ public class DatabaseConfig {
 	private static final String USERNAME = "root";
 	private static final String PASSWORD = "";
 	
-	public static Connection getDbConnection() throws SQLException, ClassNotFoundException {
+	public static Connection getDatabaseConnection() throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		return DriverManager.getConnection(URL, USERNAME, PASSWORD);
 	}
 
 	public static String getDbName() {
 		return DB_NAME;
-	}
-
-	public static String getUrl() {
-		return URL;
-	}
-
-	public static String getUsername() {
-		return USERNAME;
-	}
-
-	public static String getPassword() {
-		return PASSWORD;
-	}	
-	
-	
+	}		
 }

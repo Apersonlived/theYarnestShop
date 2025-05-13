@@ -12,8 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(
 		asyncSupported = true, 
 		urlPatterns = { 
-				"/Landing", 
-				"/"
+				"/Landing"
 		})
 
 public class LandingController extends HttpServlet{
@@ -28,6 +27,4 @@ public class LandingController extends HttpServlet{
 		request.getRequestDispatcher("WEB-INF/jspfiles/landing.jsp").forward(request, response);
 	}
 
-	
-	
 }
